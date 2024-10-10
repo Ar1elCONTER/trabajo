@@ -1,0 +1,121 @@
+body {
+    margin:  0px 0px 100px 0px;
+    background-image: url(https://wallpapermemory.com/uploads/389/library-background-hd-1920x1200-74744.jpg);
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7; /* Color de fondo */
+}
+
+/* espacio para barra de navegacion*/
+.tamañoimg{
+	border-radius: 100px;
+	height: 25px;
+	width: 25px;
+}
+.logo{
+	border-color: solid #1d1d1d;
+	border-radius: 50px;
+	
+}
+#espacio{
+	padding: 10px;
+}
+
+#logonav{
+	display: flex;
+}
+.espacionav{
+	padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe6f2; /* Color de cabecera */
+	padding: 20px;
+	text-align: center;
+    border-radius: 0px;
+    margin: 0px 0px 80px 0px;
+	
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul li {
+	margin-right: 20px;
+}
+
+header nav a {
+	color: #666; /* Color de texto enlaces */
+	text-decoration: none;
+}
+
+#navegador { /* pestaña de navegador delegada a Cata*/
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	border-radius: 50px;
+}
+
+#navegador a:hover {
+    color: aliceblue;
+}
+
+nav {
+    background-color: #ffd272;
+    margin: 0px 0px 0px 0px;
+}
+
+#total {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flexbox;
+    align-content: end; 
+    text-align: left;
+    background-image: url(https://wallpapers.com/images/hd/parchment-paper-background-c7kcurktuicyc12c.jpg);
+    padding: 70px 600px 20px 50px;
+    margin: 0px 50px 0px 50px;
+    border: none;
+}
+
+.profile-header img {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 500px;
+    border: solid rgb(112, 0, 0);
+    }
+
+.foto-perfil {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 50px 0px;
+    display: inline-flex;
+    background-image: linear-gradient(to bottom, #f71e1e, #610000); /* Degradado de fondo */
+    padding: 10px 10px 10px 10px;
+    border-radius: 100px;
+}
+
+.titulo {
+    
+    text-align: center;
+    align-items: flex-start;
+    background-color: #ffa125;
+    display:flexbox;
+    border: solid black;
+    margin: 0px 400px 0px 0px;;
+}
+
+.texto {
+
+    text-align: left;
+    padding: 20px 10px 10xp 0px 0px;
+    background-color: #ffe4c5;
+    border: solid rgb(0, 0, 0);
+}

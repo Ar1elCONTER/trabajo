@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de usuario</title>
+</head>
+<body>
+    <h1>Panel de usuario</h1>
+    <h2>Objetos:</h2>
+    <ul>
+    {% for obj in objects %}
+        <li>{{ obj.name }} ({{ obj.category }}) - {{ obj.status }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
+<head>
+    <link rel="stylesheet" href="buscador.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar objetos</title>
+</head>
+<body>
+    <h1>Buscar objetos</h1>
+    <form method="post">
+        <label>Buscar:</label>
+        <input type="text" name="query"><br><br>
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>

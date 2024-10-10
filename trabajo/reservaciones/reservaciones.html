@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reservaciones.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Objetos en FoundOB</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Reservar Objetos</h1>
+    </header>
+
+    <section class="select">
+        <div class="total">
+            <h2 class="sl_text">Elige un objeto para reservar:</h2>
+
+            <form action="/reservations" method="POST">
+            <label for="object">Selecciona un objeto:</label>
+            <select name="object" id="object">
+                {% for obj in objects %}
+                    {% if obj.status == 'Disponible' %}
+                        <option value="{{ obj.name }}">{{ obj.name }} - {{ obj.category }} ({{ obj.status }})</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <br> <br>
+            <input type="submit" value="Reservar" id="reserv">
+        </form>
+        </div>
+    </section>
+</body>
+</html>

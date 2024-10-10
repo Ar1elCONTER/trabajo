@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals</title>
+    <style>
+        body {
+            background-color: #268ee9; /* Colores claros */
+            background-image: url('https://i.pinimg.com/736x/bd/2c/99/bd2c99d7de01057e11ecd0d449a16752.jpg'); /* Fondo de estrellas */
+            background-size: cover;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(238, 108, 108, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            background-color: #ce1d1d;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #4CAF50;
+            color: rgb(71, 12, 233);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rentals</h1>
+        <p>Hora actual: {{ current_time }}</p>
+        <h2>Objetos Alquilados</h2>
+        <table>
+            <tr>
+                <th>Objeto</th>
+                <th>Alquilado por</th>
+            </tr>
+            {% for obj in rented_objects %}
+            <tr>
+                <td>{{ obj.name }}</td>
+                <td>{{ obj.rented_by }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{{ url_for('home') }}" class="btn">Regresar a la página principal</a>
+    </div>
+</body>
+</html>

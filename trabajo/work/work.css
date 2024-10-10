@@ -1,0 +1,196 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* espacio para barra de navegacion*/
+.tamañoimg{
+	border-radius: 100px;
+	height: 25px;
+	width: 25px;
+}
+.logo{
+	border-color: solid #1d1d1d;
+	border-radius: 50px;
+	
+}
+#espacio{
+	padding: 10px;
+}
+
+#logonav{
+	display: flex;
+}
+.espacionav{
+	padding: 10px;
+}
+#navegador{
+	padding-top: 30px;
+	padding-bottom: 30px;  
+	border-radius: 50px;
+}
+
+body {
+    background-image: url(https://wallpapers.com/images/hd/rainbow-library-shelf-aabzkrkcwc7xsp68.jpg);
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7; /* Color de fondo */
+}
+
+header {
+    display: flexbox;
+    
+	background-color: #ffe6f2; /* Color de cabecera */
+	padding: 20px;
+	text-align: center;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul li {
+	margin-right: 20px;
+}
+
+header nav a {
+	color: #666; /* Color de texto enlaces */
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.banner {
+	background-image: linear-gradient(to bottom, #ecbf9a, #fff); /* Degradado de fondo */
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.banner h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #333; /* Color de título */
+	font-size: 36px;
+}
+
+.banner p {
+	color: #666; /* Color de texto */
+	font-size: 18px;
+}
+
+.banner button {
+	background-color: #ff9e2e; /* Color de botón */
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.sobre-mi {
+	border: solid rgb(0, 255, 157);
+	background-image: linear-gradient(to bottom, #95ffb5, #e6feff); /* Color de fondo sección */
+	padding: 20px;
+	margin-top: 20px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.sobre-mi p {
+	color: #414141; /* Color de título */
+	padding: 10px;
+}
+
+.sobre-mi h2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	color: #363636; /* Color de texto */
+	background-color: rgb(233, 252, 255);
+	border-radius: 50px;
+	font-size: 45px;
+}
+
+.galeria { /*galeria modificaciones*/
+	display: inline-block;
+	justify-content: center;
+	margin-top: 20px;
+	text-align: center;
+    display: inline;
+    align-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.galeria h1 {
+	padding: 10px;
+	border: solid rgb(212, 194, 24);
+	color: #1d1d1d;
+	background-image: linear-gradient(to bottom, #eecc09, #a3961c);
+	
+}
+
+.gr_marco {
+	padding: 10px 10px 1px 10px;
+	background-color: #b19341;
+	background-image: linear-gradient(to bottom, #ffb055, #493602)
+}
+
+
+.galeria li {
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.galeria img {
+	border: solid rgb(94, 69, 32);
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+#navegador { /* pestaña de navegador delegada a Cata*/
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #ffb77d;
+    padding: 10px;
+}
+
+#navegador a:hover {
+    color: aliceblue;
+}
+
+.space { /* space se relaciona con navegador*/
+    display: flex;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+footer {
+	background-color: #ffffff; /* Color de pie de página */
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+
+footer p {
+	color: #666; /* Color de texto */
+	font-size: 14px;
+}
+
+
+
